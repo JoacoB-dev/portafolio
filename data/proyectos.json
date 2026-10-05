@@ -167,7 +167,7 @@
         ],
         "imagen": "assets/img/stock-pedidos.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/stock-pedidos-dotnet",
         "estado": "código próximamente"
     },
     {
@@ -187,7 +187,7 @@
         ],
         "imagen": "assets/img/tramites-laravel.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/tramites-laravel",
         "estado": "código próximamente"
     },
     {
@@ -208,7 +208,7 @@
         ],
         "imagen": "assets/img/clasificador-ia.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/clasificador-consultas-ia",
         "estado": "código próximamente"
     },
     {
@@ -229,7 +229,7 @@
         ],
         "imagen": "assets/img/monitor-iot.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/monitor-sensores-iot",
         "estado": "código próximamente"
     },
     {
