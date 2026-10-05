@@ -19,7 +19,7 @@
         ],
         "imagen": "assets/img/aula-ia.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/plataforma-cursos-ia",
         "estado": "código próximamente"
     },
     {
@@ -42,7 +42,7 @@
         ],
         "imagen": "assets/img/mesa-reclamos.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/mesa-reclamos",
         "estado": "código próximamente"
     },
     {
@@ -64,7 +64,7 @@
         ],
         "imagen": "assets/img/azure-pedidos.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/integracion-pedidos",
         "estado": "código próximamente"
     },
     {
@@ -84,19 +84,19 @@
         ],
         "imagen": "assets/img/plsql-facturacion.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/facturacion-plsql",
         "estado": "código próximamente"
     },
     {
         "id": "java-cuentas",
-        "titulo": "API de cuentas y transferencias (Spring Boot)",
-        "descripcion": "API REST en Java 21 y Spring Boot 3 con JPA, PostgreSQL, Flyway y JWT por roles. Las transferencias bloquean las cuentas en orden fijo para evitar deadlocks y usan Idempotency-Key para no transferir dos veces. CBU con dígitos verificadores, errores RFC 7807 y 61 pruebas, incluidas pruebas de concurrencia.",
+        "titulo": "Cuentas y transferencias (Spring Boot + Angular)",
+        "descripcion": "API REST en Java 21 y Spring Boot con JPA, PostgreSQL, Flyway y JWT por roles, y un home banking en Angular. Las transferencias bloquean las cuentas en orden fijo y usan Idempotency-Key para no transferir dos veces; Redis para caché y límite de intentos de login. 74 pruebas de backend, 41 de frontend y e2e con Playwright.",
         "tecnologias": [
             "Java 21",
             "Spring Boot",
-            "JPA / Hibernate",
             "PostgreSQL",
-            "Spring Security JWT",
+            "Angular",
+            "Redis",
             "JUnit 5"
         ],
         "etiquetas": [
@@ -105,7 +105,7 @@
         ],
         "imagen": "assets/img/java-cuentas.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/cuentas-api",
         "estado": "código próximamente"
     },
     {
@@ -127,7 +127,7 @@
         ],
         "imagen": "assets/img/python-ventas.jpg",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/ventas-ipc-argentina",
         "estado": "código próximamente"
     },
     {
@@ -145,6 +145,89 @@
             "qa"
         ],
         "imagen": "assets/img/qa-playwright.jpg",
+        "demo": "",
+        "codigo": "https://github.com/JoacoB-dev/pruebas-automatizadas",
+        "estado": "código próximamente"
+    },
+    {
+        "id": "stock-pedidos",
+        "titulo": "Stock y pedidos (.NET + React + SQL Server)",
+        "descripcion": "Sistema de stock y pedidos para una distribuidora: ASP.NET Core 10 con EF Core y migraciones sobre SQL Server 2022, concurrencia optimista con rowversion, vista y stored procedure para reportes, y frontend en React con TypeScript. 76 pruebas xUnit y 9 de Vitest.",
+        "tecnologias": [
+            "C#",
+            "ASP.NET Core",
+            "EF Core",
+            "SQL Server",
+            "React",
+            "TypeScript"
+        ],
+        "etiquetas": [
+            "dotnet",
+            "sql"
+        ],
+        "imagen": "assets/img/stock-pedidos.jpg",
+        "demo": "",
+        "codigo": "",
+        "estado": "código próximamente"
+    },
+    {
+        "id": "tramites-laravel",
+        "titulo": "Matrículas y trámites (Laravel)",
+        "descripcion": "Sistema para un consejo profesional: padrón de matriculados, portal de trámites con PDFs adjuntos, flujo con historial, cuotas y certificado PDF con código de verificación público. Laravel 13 con Eloquent, Policies, colas, notificaciones y Sanctum. 88 pruebas PHPUnit.",
+        "tecnologias": [
+            "PHP",
+            "Laravel",
+            "MySQL",
+            "Bootstrap",
+            "jQuery"
+        ],
+        "etiquetas": [
+            "web",
+            "sql"
+        ],
+        "imagen": "assets/img/tramites-laravel.jpg",
+        "demo": "",
+        "codigo": "",
+        "estado": "código próximamente"
+    },
+    {
+        "id": "clasificador-ia",
+        "titulo": "Clasificador de consultas con IA",
+        "descripcion": "Las consultas de clientes entran a una cola en Redis y un worker le pide a un LLM (Claude) un JSON validado con Pydantic: categoría, urgencia, resumen y un borrador de respuesta que un empleado aprueba. FastAPI, PostgreSQL y React. Sin clave de API usa un clasificador simulado. 84 pruebas.",
+        "tecnologias": [
+            "Python",
+            "FastAPI",
+            "Redis",
+            "PostgreSQL",
+            "Claude API",
+            "React"
+        ],
+        "etiquetas": [
+            "python",
+            "datos"
+        ],
+        "imagen": "assets/img/clasificador-ia.jpg",
+        "demo": "",
+        "codigo": "",
+        "estado": "código próximamente"
+    },
+    {
+        "id": "monitor-iot",
+        "titulo": "Monitor de sensores IoT",
+        "descripcion": "Medidores de energía y sensores de temperatura publican por MQTT; un backend en Node.js y TypeScript valida, guarda en PostgreSQL, evalúa alertas y las muestra en vivo en un dashboard. Simulador en Python y firmware de ejemplo en C. 132 pruebas.",
+        "tecnologias": [
+            "Node.js",
+            "TypeScript",
+            "MQTT",
+            "PostgreSQL",
+            "Python",
+            "C"
+        ],
+        "etiquetas": [
+            "sistemas",
+            "fullstack"
+        ],
+        "imagen": "assets/img/monitor-iot.jpg",
         "demo": "",
         "codigo": "",
         "estado": "código próximamente"
@@ -173,10 +256,11 @@
     {
         "id": "black-seven",
         "titulo": "Tienda Black Seven",
-        "descripcion": "Tienda online para la marca Black Seven, con base de datos en Supabase y envío de emails con Resend.",
+        "descripcion": "Tienda online de la marca de indumentaria Black Seven, en producción con su dominio: catálogo, carrito, checkout por transferencia, seguimiento de pedidos, mails con Resend y panel de administración de pedidos, productos, stock y portada.",
         "tecnologias": [
             "Next.js",
             "React",
+            "TypeScript",
             "Supabase",
             "Resend",
             "Vercel"
@@ -187,7 +271,7 @@
             "fullstack"
         ],
         "imagen": "assets/img/black-seven.jpg",
-        "demo": "https://black-seven-web.vercel.app",
+        "demo": "https://www.blackseven.com.ar",
         "codigo": "",
         "estado": "publicado"
     },
@@ -204,7 +288,7 @@
         ],
         "imagen": "assets/img/clientes.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/gestor-clientes",
         "estado": "código próximamente",
         "etiquetas": [
             "web",
@@ -224,7 +308,7 @@
         ],
         "imagen": "assets/img/tickets.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/tablero-tickets",
         "estado": "código próximamente",
         "etiquetas": [
             "web",
@@ -244,7 +328,7 @@
         ],
         "imagen": "assets/img/reportes.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/panel-reportes",
         "estado": "código próximamente",
         "etiquetas": [
             "web",
@@ -264,7 +348,7 @@
         ],
         "imagen": "assets/img/api.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/api-productos",
         "estado": "código próximamente",
         "etiquetas": [
             "web",
@@ -285,7 +369,7 @@
         ],
         "imagen": "assets/img/inventario.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/inventario",
         "estado": "código próximamente",
         "etiquetas": [
             "web",
@@ -305,7 +389,7 @@
         ],
         "imagen": "assets/img/migracion.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/migracion-php4-pdo",
         "estado": "código próximamente",
         "etiquetas": [
             "web",
@@ -325,7 +409,7 @@
         ],
         "imagen": "assets/img/turnos.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/agenda-turnos",
         "estado": "código próximamente",
         "etiquetas": [
             "web",
@@ -350,7 +434,7 @@
         ],
         "imagen": "assets/img/cobol-batch.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/proyectos-cobol/tree/main/batch-cuentas",
         "estado": "código próximamente"
     },
     {
@@ -370,7 +454,7 @@
         ],
         "imagen": "assets/img/cobol-abm.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/proyectos-cobol/tree/main/abm-clientes",
         "estado": "código próximamente"
     },
     {
@@ -391,7 +475,7 @@
         ],
         "imagen": "assets/img/simulador.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/proyectos-telecom/tree/main/simulador-antenas",
         "estado": "código próximamente"
     },
     {
@@ -412,7 +496,7 @@
         ],
         "imagen": "assets/img/monitor.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/proyectos-telecom/tree/main/monitor-qt",
         "estado": "código próximamente"
     },
     {
@@ -433,7 +517,7 @@
         ],
         "imagen": "assets/img/servidor-c.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/proyectos-telecom/tree/main/servidor-mensajes-c",
         "estado": "código próximamente"
     },
     {
@@ -455,7 +539,7 @@
         ],
         "imagen": "assets/img/cliente-java.png",
         "demo": "",
-        "codigo": "",
+        "codigo": "https://github.com/JoacoB-dev/proyectos-telecom/tree/main/cliente-carga-java",
         "estado": "código próximamente"
     }
 ]

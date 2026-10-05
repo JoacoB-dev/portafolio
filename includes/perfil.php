@@ -18,7 +18,7 @@ $perfil = array(
     'estudios'  => 'Licenciatura en Programación, Universidad Nacional de Hurlingham (en curso)',
     'ubicacion' => 'Buenos Aires, Argentina',
     'email'     => 'joa.bobbio@hotmail.com',
-    'github'    => 'https://github.com/joacuwu',
+    'github'    => 'https://github.com/JoacoB-dev',
     'linkedin'  => 'https://www.linkedin.com/in/[COMPLETAR]',
     'cv'        => 'assets/cv.pdf',
 );
