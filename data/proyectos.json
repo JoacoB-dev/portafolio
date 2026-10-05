@@ -256,7 +256,7 @@
     {
         "id": "black-seven",
         "titulo": "Tienda Black Seven",
-        "descripcion": "Tienda online de la marca de indumentaria Black Seven, en producción con su dominio: catálogo, carrito, checkout por transferencia, seguimiento de pedidos, mails con Resend y panel de administración de pedidos, productos, stock y portada.",
+        "descripcion": "Tienda online de la marca de indumentaria Black Seven, terminada y lista para lanzar con su dominio: catálogo, carrito, checkout por transferencia, seguimiento de pedidos, mails con Resend y panel de administración de pedidos, productos, stock y portada.",
         "tecnologias": [
             "Next.js",
             "React",
